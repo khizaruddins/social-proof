@@ -1,0 +1,15 @@
+.background-pattern {
+  z-index: 1;
+  position: relative;
+  &__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &__bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+}

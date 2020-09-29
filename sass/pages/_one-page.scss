@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  height: 100vh;
+  margin: 0rem 16.6rem;
+
+  .ratings {
+    height: 45vh;
+    margin-top: 14.5rem;
+    flex: 0 0 49%;
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+      background-color: var(--color-primary-light-grey);
+      border-radius: 1rem;
+      padding: 1.8rem 0rem;
+      margin-bottom: 1.6rem;
+      width: 44rem;
+      display: flex;
+      align-items: center;
+
+      &-text {
+        color: var(--color-primary);
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 3rem;
+      }
+
+      &-stars {
+        margin-left: 3rem;
+      }
+    }
+
+    &__item:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    &__item:nth-child(2) {
+      align-self: center;
+    }
+
+    &__item:nth-child(3) {
+      align-self: flex-end;
+    }
+
+    &__star-icon {
+      margin-left: .5rem;
+    }
+  }
+}

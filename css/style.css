@@ -1,0 +1,86 @@
+:root {
+  --color-primary: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  --color-primary-dark-grey: hsl(303, 10%, 53%);
+  --color-primary-light-grey: hsl(300, 24%, 96%);
+  --color-white:hsl(0, 0%, 100%); }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  position: relative; }
+
+.heading {
+  flex: 0 0 40%;
+  margin-top: 13rem; }
+  .heading__main {
+    font-size: 4.7rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 1.6rem;
+    color: var(--color-primary); }
+  .heading__sub {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-primary-dark-grey); }
+
+.background-pattern {
+  z-index: 1;
+  position: relative; }
+  .background-pattern__top {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .background-pattern__bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  height: 100vh;
+  margin: 0rem 16.6rem; }
+  .container .ratings {
+    height: 45vh;
+    margin-top: 14.5rem;
+    flex: 0 0 49%;
+    display: flex;
+    flex-direction: column; }
+    .container .ratings__item {
+      background-color: var(--color-primary-light-grey);
+      border-radius: 1rem;
+      padding: 1.8rem 0rem;
+      margin-bottom: 1.6rem;
+      width: 44rem;
+      display: flex;
+      align-items: center; }
+      .container .ratings__item-text {
+        color: var(--color-primary);
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 3rem; }
+      .container .ratings__item-stars {
+        margin-left: 3rem; }
+    .container .ratings__item:nth-child(1) {
+      align-self: flex-start; }
+    .container .ratings__item:nth-child(2) {
+      align-self: center; }
+    .container .ratings__item:nth-child(3) {
+      align-self: flex-end; }
+    .container .ratings__star-icon {
+      margin-left: .5rem; }

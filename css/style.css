@@ -78,6 +78,11 @@ body {
   flex: 0 0 14%;
   margin-right: 2rem; }
 
+.card-item__heading {
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  margin-bottom: .6rem; }
+
 .card-item__description {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -87,10 +92,15 @@ body {
   color: var(--color-primary-light-grey); }
 
 .card-item__title-box {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .card-item__initial {
-  color: var(--color-soft-pink); }
+  color: var(--color-soft-pink);
+  font-size: 1.2rem;
+  letter-spacing: 1px; }
 
 .container {
   display: flex;

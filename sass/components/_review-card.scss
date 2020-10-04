@@ -1,7 +1,7 @@
 .review-card{
   display: flex;
   flex:0 0 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   justify-content: space-between;
   @include responsive(375){
     justify-content: center;

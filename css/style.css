@@ -71,8 +71,8 @@ body {
 .review-card {
   display: flex;
   flex: 0 0 100%;
-  margin-bottom: 8rem;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 10rem; }
   @media only screen and (max-width: 375px) {
     .review-card {
       justify-content: center;

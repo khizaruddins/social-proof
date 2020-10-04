@@ -11,7 +11,7 @@
   }
 
   &__bottom {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     @include responsive(375) {

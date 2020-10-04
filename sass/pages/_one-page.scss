@@ -19,7 +19,8 @@
     flex-direction: column;
     @include responsive(375) {
       flex: 0 0 90%;
-      margin: 14.5rem 4rem;
+      margin: 6.5rem 4rem 4.5rem 4rem;
+      height: 40vh;
     }
 
     &__item{

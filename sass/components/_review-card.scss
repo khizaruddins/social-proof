@@ -3,6 +3,13 @@
   flex:0 0 100%;
   margin-bottom: 10rem;
   justify-content: space-between;
+  @include responsive(375){
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-bottom: auto;
+    flex: 0 0 88%;
+  }
 
   &__item {
     background-color: var(--color-primary);
@@ -13,6 +20,9 @@
     display: flex;
     flex-wrap: wrap;
     height: 86%;
+    @include responsive(375){
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__item:nth-child(1) {

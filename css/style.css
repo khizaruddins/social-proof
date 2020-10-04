@@ -25,6 +25,11 @@ body {
   flex: 0 0 40%;
   margin-top: 13rem;
   height: 30vh; }
+  @media only screen and (max-width: 375px) {
+    .heading {
+      flex: 0 0 90%;
+      margin-top: 8.5rem;
+      text-align: center; } }
   .heading__main {
     font-size: 4.7rem;
     font-weight: 600;
@@ -32,29 +37,49 @@ body {
     letter-spacing: -1px;
     margin-bottom: 1.2rem;
     color: var(--color-primary); }
+    @media only screen and (max-width: 375px) {
+      .heading__main {
+        font-size: 3.2rem;
+        margin: 0 4rem 2.2rem 4rem; } }
   .heading__sub {
     font-size: 1.45rem;
     font-weight: 400;
     line-height: 1.8;
     color: var(--color-primary-dark-grey); }
+    @media only screen and (max-width: 375px) {
+      .heading__sub {
+        margin: 0 .5rem; } }
 
 .background-pattern {
   z-index: 1;
   position: relative; }
   .background-pattern__top {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0; }
+    @media only screen and (max-width: 375px) {
+      .background-pattern__top {
+        width: 100vw; } }
   .background-pattern__bottom {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0; }
+    @media only screen and (max-width: 375px) {
+      .background-pattern__bottom {
+        width: 100vw; } }
 
 .review-card {
   display: flex;
   flex: 0 0 100%;
   margin-bottom: 10rem;
   justify-content: space-between; }
+  @media only screen and (max-width: 375px) {
+    .review-card {
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 7rem;
+      margin-bottom: auto;
+      flex: 0 0 88%; } }
   .review-card__item {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -64,6 +89,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 86%; }
+    @media only screen and (max-width: 375px) {
+      .review-card__item {
+        margin-bottom: 1.8rem; } }
   .review-card__item:nth-child(1) {
     align-self: flex-start; }
   .review-card__item:nth-child(2) {
@@ -109,12 +137,20 @@ body {
   height: 100vh;
   margin: 0rem 16.6rem;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 375px) {
+    .container {
+      justify-content: center;
+      margin: 0 auto; } }
   .container .ratings {
     height: 30vh;
     margin-top: 14.5rem;
     flex: 0 0 49%;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 375px) {
+      .container .ratings {
+        flex: 0 0 90%;
+        margin: 14.5rem 4rem; } }
     .container .ratings__item {
       background-color: var(--color-primary-light-grey);
       border-radius: 1rem;
@@ -123,18 +159,40 @@ body {
       width: 44rem;
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 375px) {
+        .container .ratings__item {
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 33rem;
+          flex-direction: column; } }
       .container .ratings__item-text {
         color: var(--color-primary);
         font-size: 1.3rem;
         font-weight: 600;
         margin-left: 3rem; }
+        @media only screen and (max-width: 375px) {
+          .container .ratings__item-text {
+            margin: 1rem 0 0 0;
+            text-align: center; } }
       .container .ratings__item-stars {
         margin-left: 3rem; }
+        @media only screen and (max-width: 375px) {
+          .container .ratings__item-stars {
+            margin: auto; } }
     .container .ratings__item:nth-child(1) {
       align-self: flex-start; }
+      @media only screen and (max-width: 375px) {
+        .container .ratings__item:nth-child(1) {
+          align-items: stretch; } }
     .container .ratings__item:nth-child(2) {
       align-self: center; }
+      @media only screen and (max-width: 375px) {
+        .container .ratings__item:nth-child(2) {
+          align-items: stretch; } }
     .container .ratings__item:nth-child(3) {
       align-self: flex-end; }
+      @media only screen and (max-width: 375px) {
+        .container .ratings__item:nth-child(3) {
+          align-items: stretch; } }
     .container .ratings__star-icon {
       margin-left: .5rem; }
